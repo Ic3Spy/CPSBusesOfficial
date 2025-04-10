@@ -1,5 +1,21 @@
-﻿<h3>OM_Dashboard</h3>
+﻿@page "/OM_Dashboard"
 
-@code {
-
-}
+<h1>Operations Manager</h1>
+@* Navigation to 5 viewing tables *@
+<section>
+	<button>View Schedules</button>
+	<button>View Attendance</button>
+	<button>View Current Dispatches</button>
+	<button>View Dispatch History</button>
+	<button>View Incident Reports</button>
+	<button>View Violation Reports</button>
+</section>
+@* This section allows OM to oversee solid values *@
+<section>
+	<div>Users: </div>
+	<div>Buses: </div>
+	<div>Total Dispatches: </div>
+	<div>Total Incidents: </div>
+	<div>Total Violations: </div>
+	<div>Total Inpected: </div>
+</section>
