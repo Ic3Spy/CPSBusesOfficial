@@ -7,14 +7,14 @@ using SQLite;
 
 namespace CPSBusesOfficial.Models
 {
-    public class IncidentReport
+    public class Role
     {
-        public string IR_ID { get; set; }
-        public string U_ID { get; set; }
-        public string Details { get; set; }
-        public string PlateNumber { get; set; }
-        public string IR_Date { get; set; }
-        
+        [PrimaryKey]
+        [NotNull]
+        public string R_ID { get; set; }
+        [NotNull]
+        public string RoleName { get; set; }
+        public int UserCount { get; set; }
         [NotNull]
         public bool IsDeleted { get; set; }
         public string CreatedBy { get; set; }

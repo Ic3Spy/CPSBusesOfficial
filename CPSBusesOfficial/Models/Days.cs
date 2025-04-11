@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CPSBusesOfficial.Models
 {
-    internal class Roles
+    public class Days
     {
+        public string Day { get; set; }
     }
 }

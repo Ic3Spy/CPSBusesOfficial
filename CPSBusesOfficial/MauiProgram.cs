@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CPSBusesOfficial.Data;
+using Microsoft.Extensions.Logging;
 
 namespace CPSBusesOfficial
 {
@@ -20,7 +21,8 @@ namespace CPSBusesOfficial
     		builder.Services.AddBlazorWebViewDeveloperTools();
     		builder.Logging.AddDebug();
 #endif
-
+            builder.Services.AddSingleton<AppShellContext>();
+            builder.Services.AddSingleton<DatabaseContext>();
             return builder.Build();
         }
     }

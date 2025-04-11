@@ -7,14 +7,12 @@ using SQLite;
 
 namespace CPSBusesOfficial.Models
 {
-    public class IncidentReport
+    public class Bus
     {
-        public string IR_ID { get; set; }
-        public string U_ID { get; set; }
-        public string Details { get; set; }
+        [PrimaryKey]
         public string PlateNumber { get; set; }
-        public string IR_Date { get; set; }
-        
+        public string VIN {  get; set; }
+        public string Status { get; set; }
         [NotNull]
         public bool IsDeleted { get; set; }
         public string CreatedBy { get; set; }
